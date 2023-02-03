@@ -1,0 +1,87 @@
+{
+  "card": {
+    "css": "grid-template-rows: var(--card--grid-rows, min-content, 30px); grid-template-columns: var(--card--grid-columns, repeat(7, 1fr)); grid-template-areas: var(--card--grid-areas, 'p s n n n n n' 'm fl st t h f a');"
+  },
+  "power": {
+    "prop": "humidifier.on",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:air-humidifier-off","mdi:air-humidifier"],
+    "label": "humidifier.target_humidity"
+  },
+  "down": {
+    "prop": "humidifier.target_humidity",
+    "value": 1,
+    "min": 40,
+    "max": 70,
+    "step": 1,
+    "icon": "mdi:chevron-down",
+    "backward": true
+  },
+  "up": {
+    "prop": "humidifier.target_humidity",
+    "value": 1,
+    "min": 40,
+    "max": 70,
+    "step": 1,
+    "icon": "mdi:chevron-up"
+  },
+  "slider": {
+    "prop": "humidifier.target_humidity",
+    "value": 1,
+    "min": 40,
+    "max": 70,
+    "step": 1
+  },
+  "fan_level": {
+    "prop": "humidifier.fan_level",
+    "value": [1,2,3,4],
+    "state": ["1", "2","3","A"],
+    "icon": ["mdi:fan-speed-1","mdi:fan-speed-2","mdi:fan-speed-3","mdi:fan-auto"]
+  },
+  "mode": {
+    "prop": "humidifier.mode",
+    "value": [0,1],
+    "state": ["None", "Constant Humidity"],
+    "icon": ["mdi:waves","mdi:water-sync"]
+  },
+  "status": {
+    "prop": "humidifier.status",
+    "value": [1,2],
+    "state": ["Idle", "Busy"],
+    "icon": ["mdi:blur-off","mdi:blur"],
+    "click": ""
+  },
+  "fault": {
+    "prop": "humidifier.fault",
+    "value": [0,1,2],
+    "state": ["No Faults", "Insufficient Water", "Water Separation"],
+    "icon": ["mdi:tray-full","mdi:tray-alert","mdi:tray-remove"],
+    "click": "",
+    "bgcolor": ["", "var(--error-color)", "var(--error-color)"]
+  },
+  "indicator_light": {
+    "prop": "indicator_light.on",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:brightness-2","mdi:brightness-5"]
+  },
+  "alarm": {
+    "prop": "alarm",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:volume-off","mdi:volume-high"]
+  },
+  "temperature": {
+    "prop": "environment.temperature",
+    "value": 1,
+    "icon": "mdi:thermometer",
+    "click": ""
+  },
+  "humidity": {
+    "prop": "environment.relative_humidity",
+    "value": 1,
+    "icon": "mdi:water-percent",
+    "click": ""
+  }
+}

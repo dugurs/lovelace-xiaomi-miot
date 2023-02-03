@@ -1,0 +1,161 @@
+{
+  "card": {
+    "css": "grid-template-rows: var(--card--grid-rows, min-content, 30px, 30px, 30px); grid-template-columns: var(--card--grid-columns, repeat(5, 1fr)); grid-template-areas: var(--card--grid-areas, 'n n n n n' 'p s hs ha t' 'o m vs va h' 'ao aot af aft a');"
+  },
+  "power": {
+    "prop": "fan.on",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": "mdi:fan",
+    "label": "dm_service.speed_level"
+  },
+  "down": {
+    "prop": "dm_service.speed_level",
+    "value": 1,
+    "min": 1,
+    "max": 100,
+    "step": 25,
+    "icon": "mdi:chevron-down",
+    "backward": true
+  },
+  "up": {
+    "prop": "dm_service.speed_level",
+    "value": 1,
+    "min": 1,
+    "max": 100,
+    "step": 25,
+    "icon": "mdi:chevron-up"
+  },
+  "slider": {
+    "prop": "dm_service.speed_level",
+    "value": 1,
+    "min": 1,
+    "max": 100,
+    "step": 1
+  },
+  "mode": {
+    "prop": "fan.mode",
+    "value": [0,1,2,3],
+    "state": ["Straight Wind", "Natural Wind", "Smart", "Sleep"],
+    "icon": ["mdi:weather-windy", "mdi:leaf", "mdi:fan-auto", "mdi:power-sleep"]
+  },
+  "off_delay_time": {
+    "prop": "off_delay_time",
+    "value": [0,30,60,120,180,240,300,360,420,480],
+    "icon": "mdi:camera-timer"
+  },
+  "hswing": {
+    "prop": "fan.horizontal_swing",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": "mdi:arrow-left-right"
+  },
+  "hswing_angle": {
+    "prop": "horizontal_swing_included_angle-2-5",
+    "value": [30,60,90,120,140],
+    "icon": "mdi:arrow-left-right"
+  },
+  "vswing": {
+    "prop": "fan.vertical_swing",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": "mdi:arrow-up-down"
+  },
+  "vswing_angle": {
+    "prop": "vertical_swing_included_angle-2-8",
+    "value": [35,65,95],
+    "icon": "mdi:arrow-up-down"
+  },
+  "swing_down": {
+    "prop": "dm_service.swing_updown_manual",
+    "value": 2,
+    "icon": "mdi:chevron-down"
+  },
+  "swing_up": {
+    "prop": "dm_service.swing_updown_manual",
+    "value": 1,
+    "icon": "mdi:chevron-up"
+  },
+  "swing_left": {
+    "prop": "dm_service.swing_lr_manual",
+    "value": 1,
+    "icon": "mdi:chevron-left"
+  },
+  "swing_right": {
+    "prop": "dm_service.swing_lr_manual",
+    "value": 2,
+    "icon": "mdi:chevron-right"
+  },
+  "temperature": {
+    "prop": "temperature-9-1",
+    "value": 1,
+    "icon": "mdi:thermometer",
+    "click": ""
+  },
+  "humidity": {
+    "prop": "relative_humidity-9-2",
+    "value": 1,
+    "icon": "mdi:water-percent",
+    "click": ""
+  },
+  "alarm": {
+    "prop": "alarm",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:volume-off","mdi:volume-high"]
+  },
+  "locked": {
+    "prop": "physical_controls_locked",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:lock-open-variant","mdi:lock-open"]
+  },
+  "auto_on": {
+    "prop": "dm_service.on",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": "mdi:fan-auto",
+    "label": "auto_on_temp_minus"
+  },
+  "auto_on_temp_minus": {
+    "prop": "dm_service.temperature",
+    "value": 15,
+    "min": 15,
+    "max": 36,
+    "step": 1,
+    "icon": "mdi:chevron-down",
+    "backward": true
+  },
+  "auto_on_temp_plus": {
+    "prop": "dm_service.temperature",
+    "value": 15,
+    "min": 15,
+    "max": 36,
+    "step": 1,
+    "icon": "mdi:chevron-up"
+  },
+  "auto_off": {
+    "prop": "dm_service.off",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": "mdi:fan-off",
+    "label": "auto_off_temp_minus"
+  },
+  "auto_off_temp_minus": {
+    "prop": "dm_service-8.temperature",
+    "value": 14,
+    "min": 14,
+    "max": 35,
+    "step": 1,
+    "icon": "mdi:chevron-down",
+    "backward": true
+  },
+  "auto_off_temp_plus": {
+    "prop": "dm_service-8.temperature",
+    "value": 14,
+    "min": 14,
+    "max": 35,
+    "step": 1,
+    "icon": "mdi:chevron-up"
+  }
+}

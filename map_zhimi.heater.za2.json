@@ -1,0 +1,70 @@
+{
+  "card": {
+    "css": "grid-template-rows: var(--card--grid-rows, min-content, 30px); grid-template-columns: var(--card--grid-columns, repeat(5, 1fr)); grid-template-areas: var(--card--grid-areas, 'p s n n n' 't h o b a');"
+  },
+  "power": {
+    "prop": "heater.on",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:radiator-off", "mdi:radiator"],
+    "label": "heater.target_temperature"
+  },
+  "down": {
+    "prop": "heater.target_temperature",
+    "value": 1,
+    "min": 16,
+    "max": 28,
+    "step": 1,
+    "icon": "mdi:chevron-down",
+    "backward": true
+  },
+  "up": {
+    "prop": "heater.target_temperature",
+    "value": 1,
+    "min": 16,
+    "max": 28,
+    "step": 1,
+    "icon": "mdi:chevron-up"
+  },
+  "slider": {
+    "prop": "heater.target_temperature",
+    "value": 1,
+    "min": 16,
+    "max": 28,
+    "step": 1
+  },
+  "brightness": {
+    "prop": "indicator_light.brightness",
+    "value": [0,1,2],
+    "icon": ["mdi:brightness-5","mdi:brightness-4","mdi:brightness-1"]
+  },
+  "off_delay_time": {
+    "prop": "countdown.countdown_time",
+    "value": [0,1,2,3,4,5,6,7,8],
+    "icon": "mdi:camera-timer"
+  },
+  "alarm": {
+    "prop": "alarm",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:volume-off","mdi:volume-high"]
+  },
+  "locked": {
+    "prop": "physical_controls_locked",
+    "value": false,
+    "state": ["off", "on"],
+    "icon": ["mdi:lock-open-variant","mdi:lock-open"]
+  },
+  "temperature": {
+    "prop": "environment.temperature",
+    "value": 1,
+    "icon": "mdi:thermometer",
+    "click": ""
+  },
+  "humidity": {
+    "prop": "environment.relative_humidity",
+    "value": 1,
+    "icon": "mdi:water-percent",
+    "click": ""
+  }
+}
